@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7b183b">
+<title>For My Wifeyyyy ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
+:root{--pink:#ffb6c9;--rose:#e95783;--wine:#7b183b;--cream:#fff8f5;--gold:#e7c28a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#260b1a;color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+button{font:inherit}
+.screen{min-height:100svh;padding:42px 18px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.hero{background:radial-gradient(ellipse at 50% 20%,#a3325b 0%,transparent 60%),linear-gradient(145deg,#270b1b,#631630 58%,#300b20)}
+.content{width:100%;max-width:720px;margin:auto}
+.eyebrow{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase}
+.big-heart{font-size:72px;margin:25px 0;display:inline-block;filter:drop-shadow(0 0 25px #ff729b66);animation:beat 1.8s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}10%,30%{transform:scale(1.1)}20%,40%{transform:scale(1)}}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:500}
+h1{font-size:clamp(43px,10vw,76px);line-height:1.12;margin:12px 0 20px}
+h2{font-size:clamp(33px,7vw,48px);line-height:1.2;margin:16px 0}
+h3{font-size:25px}
+.rose{color:var(--pink);font-style:italic}
+p{font-size:15px;line-height:1.9;color:#f5dce5}
+.subtitle{max-width:480px;margin:0 auto 28px}
+.btn{display:inline-block;margin:7px;border:1px solid #f9bdcf66;border-radius:40px;padding:14px 24px;background:linear-gradient(120deg,#ffb4c8,#e75b88);color:#451128;font-weight:700;cursor:pointer;box-shadow:0 8px 30px #e9578330;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px #e9578350}
+.btn:focus-visible{outline:3px solid white;outline-offset:4px}
+.hint{font-size:11px;color:#dca9bb;letter-spacing:1px;margin-top:24px}
+.section{background:linear-gradient(160deg,#351024,#210817);border-top:1px solid #ffffff0c}
+.hidden{display:none!important}
+.card{padding:clamp(23px,6vw,42px);border:1px solid #eeb4c53d;border-radius:24px;background:linear-gradient(140deg,#ffffff0d,#ffffff04);box-shadow:0 15px 50px #00000020;text-align:left}
+.letter{white-space:pre-line;font-size:14px;line-height:2}
+.signature{font-family:'Playfair Display',serif;font-size:25px;font-style:italic;color:var(--pink);margin-top:25px}
+.divider{width:70px;height:1px;background:var(--gold);margin:27px auto}
+.timeline{margin:30px auto;display:grid;gap:15px;text-align:left;max-width:570px}
+.moment{border-left:2px solid var(--rose);padding:5px 0 8px 20px}
+.moment .emoji{font-size:23px}
+.moment h3{margin:7px 0;color:var(--pink)}
+.moment p{margin:0;font-size:13px}
+.promise{margin-top:26px;padding:22px;border-radius:18px;background:#e9578312;border:1px solid #e9578330}
+.final{background:radial-gradient(ellipse at 50% 25%,#842342,transparent 70%),#210817}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.heart-float{position:absolute;bottom:-40px;opacity:0;animation:floatUp linear forwards}
+@keyframes floatUp{10%{opacity:.8}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+footer{padding:25px 12px;color:#d7a4b7;font-size:11px;letter-spacing:1px;text-align:center;background:#210817}
+@media(max-width:480px){.screen{padding:35px 15px}.card{padding:22px 18px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+
+<section class="screen hero" id="home">
+  <div class="content">
+    <div class="eyebrow">A little surprise made with love</div>
+    <div class="big-heart">❤️</div>
+    <h1>For my<br><span class="rose">Wifeyyyy</span></h1>
+    <p class="subtitle">To my beautiful Munazza, my baby, my dulaar, my kuchu puchuuu, and my favourite person. 💗</p>
+    <button class="btn" onclick="showScreen('birthday')">OPEN YOUR SURPRISE 💌</button>
+    <div class="hint">MADE ESPECIALLY FOR YOU · WITH LOVE ♡</div>
+  </div>
+</section>
+
+<section class="screen section hidden" id="birthday">
+  <div class="content">
+    <div class="eyebrow">Today is all about you</div>
+    <div style="font-size:48px;margin-top:22px">🎂🌹🎀</div>
+    <h2>Happy Birthday,<br><span class="rose">my love!</span></h2>
+    <p>Seven years of memories, countless little moments, and a special place in my heart that will always be yours.</p>
+    <div class="divider"></div>
+    <button class="btn" onclick="showScreen('letter')">A LETTER FOR YOU 💌</button>
+    <button class="btn" onclick="showScreen('story')">OUR LITTLE STORY 🥹</button>
+    <button class="btn" onclick="showScreen('final')">ONE LAST SURPRISE 🎁</button>
+  </div>
+</section>
+
+<section class="screen section hidden" id="letter">
+  <div class="content">
+    <div class="eyebrow">From my heart to yours</div>
+    <h2>My dearest <span class="rose">Munazza</span></h2>
+    <div class="card"><div class="letter">Happiest birthdayyyy, my babyyyy! ❤️🥹
+
+Sometimes I struggle to put my feelings into words, but I hope you know just how special you are to me.
+
+We've shared seven years together, filled with beautiful memories, laughter, difficult moments, arguments, and lessons. When I look back at our journey, I'm grateful for all the moments that have become a part of our story.
+
+You are someone I want to see happy, someone I want to see succeed, and someone whose smile genuinely makes me happy. I pray that Allah blesses you with good health, happiness, success, peace, and everything your heart wishes for. Ameen. 🤲🏻❤️
+
+I'm still studying, working towards my goals, and building my future. I hope we continue growing, supporting each other's dreams, learning from our experiences, and creating beautiful memories together.
+
+I know gifts and words can never explain everything I feel. I just hope that, in my own little ways, I can keep making you feel loved and appreciated.
+
+Thank you for being part of my life, my love. Thank you for all our good, bad, naughty, and silly memories. 🤭❤️
+
+I hope you have the most beautiful birthday, and I hope the year ahead brings you countless reasons to smile.
+
+You will always be my babyyyy, my princess, my dulaar, and my WIFEYYYY! 💍❤️</div>
+      <div class="signature">Forever your person, ❤️</div>
+    </div>
+    <button class="btn" onclick="showScreen('story')">OUR LITTLE STORY 🥹</button>
+    <button class="btn" onclick="showScreen('final')">ONE LAST SURPRISE 🎁</button>
+  </div>
+</section>
+
+<section class="screen section hidden" id="story">
+  <div class="content">
+    <div class="eyebrow">Seven years and counting</div>
+    <h2>Our little <span class="rose">love story</span></h2>
+    <p>Every relationship has its own story. This is a little celebration of ours. ❤️</p>
+    <div class="timeline">
+      <div class="moment"><div class="emoji">🌹</div><h3>The beginning of us</h3><p>Two people beginning a journey that would create so many memories.</p></div>
+      <div class="moment"><div class="emoji">😂</div><h3>Our silly moments</h3><p>The jokes, the laughter, the naughty moments, and the things only we understand.</p></div>
+      <div class="moment"><div class="emoji">🫂</div><h3>Growing together</h3><p>Learning, understanding each other, and growing through life's different stages.</p></div>
+      <div class="moment"><div class="emoji">💍</div><h3>Our future</h3><p>More birthdays, more memories, more laughter, and beautiful dreams to work towards.</p></div>
+    </div>
+    <div class="promise"><p style="margin:0">Seven years are part of our story, babyyy. There are still so many beautiful memories waiting to be made. ❤️</p></div>
+    <button class="btn" onclick="showScreen('final')">ONE LAST SURPRISE 🎁</button>
+    <button class="btn" onclick="showScreen('birthday')">BACK TO YOUR BIRTHDAY 💗</button>
+  </div>
+</section>
+
+<section class="screen final hidden" id="final">
+  <div class="content">
+    <div class="eyebrow">Just for my favourite girl</div>
+    <div class="big-heart">💗</div>
+    <h2>You're my favourite<br><span class="rose">kind of forever.</span></h2>
+    <p>If I could give you one thing in life, it would be the ability to see yourself through my eyes. Then you'd understand just how special you are to me. 🥹❤️</p>
+    <div class="divider"></div>
+    <h3 style="color:var(--gold)">Happy Birthday, Wifeyyyy! 💍</h3>
+    <p>May Allah always protect you, guide you, and bless you with a life full of happiness. Ameen. 🤲🏻</p>
+    <p class="rose" style="font-family:'Playfair Display',serif;font-size:23px">I love you sooooo much, babyyyy! ❤️💋</p>
+    <button class="btn" onclick="celebrate()">SEND YOU A MILLION HEARTS 💕</button>
+    <p id="final-note" class="hint"></p>
+    <button class="btn" onclick="showScreen('birthday')">START AGAIN 💌</button>
+  </div>
+</section>
+
+<footer>ONE LITTLE WEBSITE · A WHOLE LOT OF LOVE ❤️</footer>
+<script>
+function showScreen(id){
+  const target=document.getElementById(id);
+  if(!target)return;
+  document.querySelectorAll(".screen").forEach(section=>section.classList.add("hidden"));
+  target.classList.remove("hidden");
+  target.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function burstHearts(count){
+  const container=document.getElementById("hearts");
+  const symbols=["❤️","💕","💗","💖","💘","🌹"];
+  for(let i=0;i<count;i++){
+    const heart=document.createElement("span");
+    heart.className="heart-float";
+    heart.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    heart.style.left=(Math.random()*100)+"%";
+    heart.style.fontSize=(14+Math.random()*22)+"px";
+    heart.style.animationDuration=(3+Math.random()*3)+"s";
+    heart.style.animationDelay=(Math.random()*.5)+"s";
+    container.appendChild(heart);
+    heart.addEventListener("animationend",()=>heart.remove());
+  }
+}
+function celebrate(){
+  burstHearts(55);
+  document.getElementById("final-note").textContent="ALL MY LOVE, JUST FOR YOU! ❤️";
+}
+</script>
+</body>
+</html>
